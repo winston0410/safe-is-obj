@@ -4,11 +4,15 @@
   "main": "index.js",
   "author": "Hugo Sum",
   "license": "MIT",
+  "files": [
+    "dist/"
+  ],
   "devDependencies": {
     "esbuild": "^0.8.31"
   },
   "scripts": {
-    "build": "node build.js"
+    "build": "node build.js",
+    "prepublish": "yarn build"
   },
   "exports": {
     ".": {
