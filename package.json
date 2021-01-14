@@ -1,0 +1,19 @@
+{
+  "name": "safeIsObj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Hugo Sum",
+  "license": "MIT",
+  "devDependencies": {
+    "esbuild": "^0.8.31"
+  },
+  "scripts": {
+    "build": "node build.js"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "default": "./dist/esm/index.js"
+    }
+  }
+}
